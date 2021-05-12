@@ -123,6 +123,7 @@ a {
   top: 100%;
   left: 0;
   min-width: 100%;
+  text-align: center;
 }
 
 .top-bar__menu ul>li:hover>ul {
