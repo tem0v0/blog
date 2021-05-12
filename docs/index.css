@@ -43,6 +43,10 @@ a {
   box-sizing: border-box;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .border-red {
   border: 2px solid red;
 }
