@@ -71,11 +71,11 @@ a {
 }
 
 .top-bar>section>div:nth-child(2) {
-  width: calc(100% - 140px - 560px);
+  width: calc(100% - 140px - 561px);
 }
 
 .top-bar>section>div:last-child {
-  width: 560px;
+  width: 561px;
 }
 
 /* 탑바__로고 시작 */
@@ -102,6 +102,10 @@ a {
   display: block;
   white-space: nowrap;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.top-bar__menu>ul>li:nth-child(5)>a {
+  padding:13px 14px;
 }
 
 .top-bar__menu ul>li:hover>a {
