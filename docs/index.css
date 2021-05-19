@@ -1,0 +1,233 @@
+/* 폰트 시작 */
+
+@font-face {
+  font-family: 'BBTreeGB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: 'BBTreeGB';
+}
+
+/* 폰트 끝 */
+
+/* 노말라이즈 시작 */
+
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 노말라이즈 끝 */
+
+/* 라이브러리 시작 */
+
+.inline-grid {
+  font-size: 0;
+}
+
+.inline-grid>* {
+  font-size: 1rem;
+  vertical-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.border-red {
+  border: 2px solid red;
+}
+
+.block {
+  display: block;
+}
+
+.con {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-box > img {
+  width: 100%;
+  display: block;
+}
+
+/* 라이브러리 끝 */
+
+/* 커스텀 시작 */
+
+/* 탑바 시작 */
+
+.con {
+  width:1200px;
+}
+
+.top-bar {
+  color: rgba(33, 54, 86, 1)
+}
+
+.top-bar>.con>div:first-child {
+  width: 140px;
+}
+
+.top-bar>.con>div:nth-child(2) {
+  width: calc(100% - 140px - 561px);
+}
+
+.top-bar>.con>div:last-child {
+  width: 561px;
+}
+
+/* 탑바__로고 시작 */
+
+.top-bar__logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/* 탑바__로고 끝 */
+
+/* 탑바__우측 메뉴 시작 */
+
+.top-bar__menu ul>li {
+  position: relative;
+}
+
+.top-bar__menu ul>li>a {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 13px;
+  display: block;
+  white-space: nowrap;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.top-bar__menu>ul>li:nth-child(5)>a {
+  padding:13px 14px;
+}
+
+.top-bar__menu ul>li:hover>a {
+  color: rgba(245, 245, 245, 1);
+  background-color: rgba(120, 204, 204, 1);
+}
+
+.top-bar__menu>ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  text-align: center;
+}
+
+.top-bar__menu ul>li:hover>ul {
+  display: block;
+}
+
+.top-bar__menu>ul ul ul {
+  top: 0;
+  left: auto;
+  right: 100%;
+}
+
+/* 탑바__우측 메뉴 끝 */
+
+/* 탑바 끝 */
+
+/* section-0 */
+
+.section-0 {
+  margin-top: 20px;
+}
+
+/* work-list-box 시작 */
+
+.work-list-box > ul {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.work-list-box > ul > li {
+  width: calc(100% / 3);
+  margin-top: 20px;
+  padding:0 10px;
+  cursor: pointer;
+}
+
+.work-list-box > ul > li > div > .work-name {
+  text-align: center;
+  font-weight: bold;
+  margin-top:5px;
+}
+
+.work-list-box > ul > li > div > .work-date-period {
+text-align: center;
+color:rgb(90,90,90);
+margin-top:5px;
+}
+
+.work-list-box > ul > li > div > .img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-list-box > ul > li > div > .img-box > .bg {
+background-color:rgba(0,0,0,0);
+width:100%;
+height: 100%;
+position: absolute;
+top:0;
+left:0;
+transition: background-color 1s;
+}
+
+.work-list-box > ul > li:hover > div > .img-box > .bg {
+  background-color:rgba(0,0,0,0.5);
+}
+
+.work-list-box > ul > li > div > .img-box > .text-button {
+border: 3px solid white;
+border-radius: 5px;
+padding: 5px;
+color:white;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+opacity: 0;
+transition:opacity 1s;
+}
+
+.work-list-box > ul > li:hover > div > .img-box > .text-button {
+  opacity:1;
+}
+
+.work-list-box > ul > li > div > .img-box > img {
+transition: transform 1s;
+z-index: -1;
+position: relative;
+}
+
+.work-list-box > ul > li:hover > div > .img-box > img {
+transform: scale(1.4);
+}
+
+  /* 커스텀 끝 */
